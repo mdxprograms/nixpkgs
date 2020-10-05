@@ -6,7 +6,12 @@ My home-manager, direnv, nix setup
 
 Clone this repo into `~/.config` with default name of repo being used as the directory
 
-1. Install nix if not already available: `curl -L https://nixos.org/nix/install | sh`
+1. Install nix if not already available:
+
+```bash
+curl -L https://nixos.org/nix/install | sh
+```
+
 2. Add the unstable channel and home-manager channel:
 
 ```bash
@@ -33,3 +38,4 @@ brew install direnv
 ```
 
 5. Create a `.envrc` with `use nix` as its content in each project that uses nix and run `direnv allow .` within the project to allow direnv to auto enable and disable nix packages for the project.
+   Anything inside of `shell.nix` within a project directory will be available when running `nix-shell shell.nix`
