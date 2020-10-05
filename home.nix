@@ -10,7 +10,6 @@
       alacritty
       bat
       direnv
-      firefox
       fzf
       ghc
       jq
@@ -68,21 +67,6 @@
       enable = true;
       userName = "mdxprograms";
       userEmail = "mdx.programs@gmail.com";
-    };
-
-    firefox = {
-      enable = true;
-      profiles = {
-        myprofile = {
-          settings = {
-            "general.smoothScroll" = false;
-          };
-        };
-      };
-    };
-
-    fzf = {
-      enable = true;
     };
   };
 }
