@@ -19,6 +19,7 @@
       python3
       ranger
       ripgrep
+      vifm
     ];
   };
 
