@@ -7,19 +7,15 @@
     stateVersion = "20.09";
 
     packages = with pkgs; [
-      alacritty
       bat
       direnv
       fzf
       ghc
       jq
       lua5_1
-      lua51Packages.moonscript
-      nim
       nodejs-14_x
       pipenv
       python3
-      ranger
       ripgrep
       vifm
     ];
