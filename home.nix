@@ -13,6 +13,8 @@
       fzf
       ghc
       jq
+      lua5_1
+      lua51Packages.moonscript
       nim
       nodejs-14_x
       pipenv
