@@ -8,10 +8,12 @@
 
     packages = with pkgs; [
       bat
+      clojure
       direnv
       fzf
       ghc
       jq
+      leiningen
       lua5_1
       nodejs-14_x
       pipenv
