@@ -8,8 +8,10 @@
 
     packages = with pkgs; [
       bat
+      clang
       clojure
       direnv
+      fd
       fzf
       ghc
       jq
@@ -21,7 +23,14 @@
       ripgrep
       vifm
     ];
+
+    # file.".doom.d" = {
+      # source = "./.doom.d";
+      # recursive = true;
+      # onChange = readFile "./doom-sync.sh";
+    # };
   };
+
 
   programs = {
     home-manager = {
