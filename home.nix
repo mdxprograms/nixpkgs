@@ -10,7 +10,9 @@
       bat
       clang
       clojure
+      coreutils
       direnv
+      emacs
       fd
       fzf
       ghc
@@ -24,11 +26,11 @@
       vifm
     ];
 
-    # file.".doom.d" = {
-      # source = "./.doom.d";
-      # recursive = true;
-      # onChange = readFile "./doom-sync.sh";
-    # };
+    file.".doom.d" = {
+      source = "/home/josh/.config/nixpkgs/.doom.d";
+      recursive = true;
+      onChange = builtins.readFile "/home/josh/.config/nixpkgs/doom-sync.sh";
+    };
   };
 
 
