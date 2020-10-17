@@ -23,7 +23,6 @@
       pipenv
       python3
       ripgrep
-      vifm
     ];
 
     file.".doom.d" = {
