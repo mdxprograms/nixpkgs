@@ -38,6 +38,7 @@ brew install direnv
 ```
 
 5. Create a `.envrc` with `use nix` as its content in each project that uses nix and run `direnv allow .` within the project to allow direnv to auto enable and disable nix packages for the project.
+   The following will be automatic after allowing direnv:
    Anything inside of `shell.nix` within a project directory will be available when running `nix-shell shell.nix`
 
 ### Install DOOM or sync
