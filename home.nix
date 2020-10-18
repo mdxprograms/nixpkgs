@@ -9,7 +9,6 @@
     packages = with pkgs; [
       bat
       clang
-      clojure
       coreutils
       direnv
       emacs
@@ -17,12 +16,13 @@
       fzf
       ghc
       jq
-      leiningen
       lua5_1
       nodejs-14_x
       pipenv
+      purescript
       python3
       ripgrep
+      spago
     ];
 
     file.".doom.d" = {
