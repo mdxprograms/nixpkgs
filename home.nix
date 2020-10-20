@@ -2,10 +2,6 @@
 
 {
   home = {
-    username = "josh";
-    homeDirectory = "/home/josh";
-    stateVersion = "20.09";
-
     packages = with pkgs; [
       bat
       clang
@@ -27,18 +23,15 @@
     ];
 
     file.".doom.d" = {
-      source = "/home/josh/.config/nixpkgs/.doom.d";
+      source = ./.doom.d;
       recursive = true;
-      onChange = builtins.readFile "/home/josh/.config/nixpkgs/doom-sync.sh";
+      onChange = builtins.readFile ./doom-sync.sh;
     };
   };
 
 
   programs = {
-    home-manager = {
-      enable = true;
-      path = "...";
-    };
+    home-manager.enable = true;
 
     neovim = {
       enable = true;
