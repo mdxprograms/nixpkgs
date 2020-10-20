@@ -12,6 +12,7 @@
       fd
       fzf
       ghc
+      git
       jq
       lua5_1
       nim
