@@ -14,6 +14,7 @@
       ghc
       jq
       lua5_1
+      nim
       nodejs-14_x
       pipenv
       purescript
