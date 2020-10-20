@@ -9,6 +9,7 @@
     packages = with pkgs; [
       bat
       clang
+      cmake
       coreutils
       direnv
       emacs
